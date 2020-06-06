@@ -4,6 +4,6 @@ namespace PaymentCardConsumer
 {
     public class Consumer
     {
-        //private static ConnectionFactory _factory;
+        // test private static ConnectionFactory _factory;
     }
 }
