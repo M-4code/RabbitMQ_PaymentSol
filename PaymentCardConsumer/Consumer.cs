@@ -1,9 +1,10 @@
-﻿using System;
+﻿using RabbitMQ.Client;
+using System;
 
 namespace PaymentCardConsumer
 {
     public class Consumer
     {
-        // test private static ConnectionFactory _factory;
+        private static ConnectionFactory _factory;
     }
 }

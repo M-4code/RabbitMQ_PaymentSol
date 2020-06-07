@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumers", "Consumers", "{6F6BB0F2-B5A1-4E84-B515-82839C5A62E7}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payments_API", "Payments_API\Payments_API.csproj", "{F029EF8F-6CFF-4E46-8F70-E1A266E4E4AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentCardConsumer", "PaymentCardConsumer\PaymentCardConsumer.csproj", "{A37E32B5-666C-4E3F-A0D4-7DEF417558E7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumer", "Consumer", "{BDE26106-4FE7-465E-AF19-1C6C4C92D5D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountsAuditConsumer", "AccountsAuditConsumer\AccountsAuditConsumer.csproj", "{DB72DD2B-AD61-452C-98C0-7B276EE33193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectPaymentCardConsumer", "DirectPaymentCardConsumer\DirectPaymentCardConsumer.csproj", "{FC9CFE3F-2587-40DD-8127-3AC98AF16C36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentsCardConsumer", "PaymentsCardConsumer\PaymentsCardConsumer.csproj", "{07D915FF-1A57-48A2-9EF7-583CF0D94E17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurchaseOrderConsumer", "PurchaseOrderConsumer\PurchaseOrderConsumer.csproj", "{32CE45BD-3847-4A97-8C81-AF30CF212743}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,16 +25,31 @@ Global
 		{F029EF8F-6CFF-4E46-8F70-E1A266E4E4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F029EF8F-6CFF-4E46-8F70-E1A266E4E4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F029EF8F-6CFF-4E46-8F70-E1A266E4E4AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A37E32B5-666C-4E3F-A0D4-7DEF417558E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A37E32B5-666C-4E3F-A0D4-7DEF417558E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A37E32B5-666C-4E3F-A0D4-7DEF417558E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A37E32B5-666C-4E3F-A0D4-7DEF417558E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB72DD2B-AD61-452C-98C0-7B276EE33193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB72DD2B-AD61-452C-98C0-7B276EE33193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB72DD2B-AD61-452C-98C0-7B276EE33193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB72DD2B-AD61-452C-98C0-7B276EE33193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9CFE3F-2587-40DD-8127-3AC98AF16C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9CFE3F-2587-40DD-8127-3AC98AF16C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9CFE3F-2587-40DD-8127-3AC98AF16C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9CFE3F-2587-40DD-8127-3AC98AF16C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D915FF-1A57-48A2-9EF7-583CF0D94E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D915FF-1A57-48A2-9EF7-583CF0D94E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D915FF-1A57-48A2-9EF7-583CF0D94E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D915FF-1A57-48A2-9EF7-583CF0D94E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32CE45BD-3847-4A97-8C81-AF30CF212743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32CE45BD-3847-4A97-8C81-AF30CF212743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32CE45BD-3847-4A97-8C81-AF30CF212743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32CE45BD-3847-4A97-8C81-AF30CF212743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A37E32B5-666C-4E3F-A0D4-7DEF417558E7} = {6F6BB0F2-B5A1-4E84-B515-82839C5A62E7}
+		{DB72DD2B-AD61-452C-98C0-7B276EE33193} = {BDE26106-4FE7-465E-AF19-1C6C4C92D5D9}
+		{FC9CFE3F-2587-40DD-8127-3AC98AF16C36} = {BDE26106-4FE7-465E-AF19-1C6C4C92D5D9}
+		{07D915FF-1A57-48A2-9EF7-583CF0D94E17} = {BDE26106-4FE7-465E-AF19-1C6C4C92D5D9}
+		{32CE45BD-3847-4A97-8C81-AF30CF212743} = {BDE26106-4FE7-465E-AF19-1C6C4C92D5D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D61D905-D698-4E31-931C-CE163D5784C7}
